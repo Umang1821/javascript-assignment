@@ -45,8 +45,8 @@ const showError = (input,message) =>{
 };
 const showSuccess = (input) =>{
     
-    input.classList.remove('aler-success');
-    input.classList.add('alert-danger');
+    input.classList.remove('alert-danger');
+    input.classList.add('alert-success');
 };
 
 function checkEmail(){
