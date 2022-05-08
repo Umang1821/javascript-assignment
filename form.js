@@ -54,10 +54,10 @@ function checkEmail(){
     var r = false;
 
     if(required(t)){
-        showError(email, "Email is required");
+        showError(email, "Enter your Email");
     }
     else if(!validEmail(t)){
-        showError(email , "Enter email in valid format" );
+        showError(email , "Incorrect Email, enter your correct email" );
     }
     else{
         showSuccess(email);
@@ -73,10 +73,10 @@ function checkName(){
     var r = false;
 
     if(required(t)){
-        showError(names, "Name is required");
+        showError(names, "Enter your Name ");
     }
     else if(validName(t)){
-        showError(names , "Enter name in valid format" );
+        showError(names , "Incorrect Name, enter your correct name" );
     }
     else{
         showSuccess(names);
@@ -93,7 +93,7 @@ function checkNumber(){
 
 
     if(!validNumber(t)){
-        showError(numbers , "Enter phone number in valid format");
+        showError(numbers , "Incorrect phone number, enter your correct phone number ");
     }
     else{
         showSuccess(numbers);
